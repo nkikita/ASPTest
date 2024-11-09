@@ -1,0 +1,27 @@
+﻿@model Contact
+<div class="con">
+    <h1>
+        Второстепенная
+    </h1>
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+
+    <form class="form" method="POST" asp-controller="Contacts" enctype="application/x-www-form-urlencoded" asp-action="Check">
+        <label asp-for="Name" class="formelement"></label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name"></span>
+
+        <label asp-for="Email" class="formelement"></label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email"></span>
+
+        <label asp-for="Age" class="formelement"></label>
+        <input asp-for="Age" />
+        <span asp-validation-for="Age"></span>
+
+        <label asp-for="Mess" class="formelement"></label>
+        <input asp-for="Mess" />
+        <span asp-validation-for="Mess"></span>
+
+        <input class="formelement" type="submit" value="Send" />
+    </form>
+</div>
